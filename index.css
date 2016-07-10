@@ -1,0 +1,473 @@
+ /* 初始化CSS  重置浏览器样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; } /*为了照顾ie6 链接图片有边框*/
+img{display: block;}
+ul, ol,li { list-style:none; }
+button{ padding-top:0; padding-bottom:0; font-family: "Arial","微软雅黑"; border:none; background:none;}
+select, input { vertical-align:middle; }
+ select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; }
+table { border-collapse:collapse; }
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+body {font-size:12px; color:#333; background:#F8F8F8 url(../img/bg-gray.png) repeat;font-family: "Arial","微软雅黑";}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+ .clearfix { zoom:1; }
+ .clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+ a { color:#333; text-decoration:none; }
+a:hover { color:#333; text-decoration:none; }/* CSS Document */
+
+/*header*/
+.header{
+    width: 100%;
+    height: 60px;
+    background: #CCC;
+}
+.header-cen{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+	text-align: center;
+}
+.header-cen h1{
+    width: 41px;
+    height: 60px;
+    background: url(img/logo.jpg) no-repeat;
+    float: left;
+    margin-right: 15px;
+}
+.header-cen p{
+    padding-top: 35px;
+    color: #999999;
+    padding-right: 8px;
+    float: left;
+}
+.nav{
+    float: right;
+}
+.nav li{
+    float: left;
+    width: 100px;
+    font: bold 14px/55px "宋体";
+    text-align: center;
+}
+.nav .current{
+    border-bottom: 5px solid #396717;
+}
+.nav .current a{
+    color: #396717;
+}
+.login{
+    width: 50px;
+    height: 25px;
+    border: 1px solid #396717;
+    border-radius: 3px;
+    color: #396717;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    margin: 20px 10px 0 20px;
+}
+.registers{
+    width: 50px;
+    height: 25px;
+    border: 1px solid #396717;
+    border-radius: 3px;
+    color: #396717;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    margin: 20px 10px 0 20px;
+}
+.register{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border: 1px solid #396717;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    background: #396717;
+    color: #ffffff;
+    margin: 20px 20px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+.register:hover{
+    color: #fff;
+}
+.bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.case{
+    display: none;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: fixed;
+    background: #fff;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+}
+.bgs{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.cases{
+    display: none;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: fixed;
+    background: #fff;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    background: url(img/cross.jpg) no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition:all 0.1s linear 0s;  
+}
+.close:hover{
+    box-shadow:0px 1px 2px rgba(0,0,0,0.5);
+}
+.form{
+    padding: 40px 70px 0;
+}
+.form h3{
+    width: 50px;
+    font-size: 16px;
+    padding: 0 30px 30px 0;
+    display: inline-block;
+}
+.form input{
+    width: 200px;
+}
+.log-btn{
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+.lo-re{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.log-input{height: 26px;}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 590px;
+    margin-left: 110px;
+    background: url(img/banner.jpg) no-repeat;
+}
+/*teach*/
+.teach{
+    width: 90%;
+    height: 650px;
+    margin-left: 110px;
+    background: url(img/teach.jpg) no-repeat;
+    text-align: center;
+}
+h2{
+    font: 24px "方正小标宋_GBK";
+    color: #386717;
+    text-align: center;
+    padding-top: 70px;
+}
+.content{
+    width: 1000px;
+    height: 420px;
+    margin: 0 auto;
+}
+.content p{
+    margin-left: 20px;
+    background: url(img/dot_b.jpg) no-repeat left center;
+    padding-left: 15px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 16px;
+}
+.content span{
+    float: right;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.teabtn{
+    width: 218px;
+    height: 28px;
+    border:1px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+.teacase{
+    display: none;
+    width: 600px;
+    height: 400px;
+    border-radius: 0;
+    position: fixed;
+    background: #fff;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.teacase-dis{display: inline-block;}
+.teacase-tex{vertical-align: top;margin-top: 20px;margin-left: 3em;}
+.teaclose{
+    width: 20px;
+    height: 20px;
+    background: url(img/cross.jpg) no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition:all 0.1s linear 0s;  
+}
+.teaclose:hover{
+    box-shadow:0px 1px 2px rgba(0,0,0,0.5);
+}
+.teaform{
+    padding: 50px 70px 0;
+}
+.teaform h3{
+    width: 60px;
+    font-size: 16px;
+    padding: 0 30px 30px 0;
+    display: inline-block;
+}
+.teaform input{
+    width: 280px;
+    height: 22px;
+}
+textarea{
+    margin: 20px 0;
+}
+.teaup{
+    padding-bottom: 40px;
+}
+.teaup input{
+    display:inline-block;
+    width:236px;
+    height: 22px;
+}
+.teaup .teaupbtn{
+    width: 80px;
+    height: 30px;
+}
+.teaform .teaissue{
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 120px;
+    display: block;
+}
+.page{
+    padding-top: 40px;
+    display: inline-block;
+}
+.last{
+    float: left;
+    padding-right: 20px;
+    line-height: 22px;
+    color: #999;
+}
+.next{
+    float: left;
+    padding-left: 20px;
+    line-height: 22px;
+    color: #999;
+}
+.number{
+    float: left;
+}
+.number li{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: #999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.number li a{
+    color: #ccc;
+}
+.number .current{
+    background: #396818;
+}
+.num-cen{
+    margin: 0 20px 0 20px;
+}
+/*student*/
+.student{
+    width: 100%;
+    height: 650px;
+    margin-left: 110px;
+    background: url(img/student.jpg) no-repeat;
+    text-align: center;
+}
+.student h2{
+    color: #fff;
+}
+.student .content span{
+    color: #fff;
+}
+.student .content p{
+    background: url(img/dot_w.jpg) no-repeat left center;
+}
+.student .content a{
+    color: #fff;
+}
+.stubtn{
+    width: 218px;
+    height: 28px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    border:1px solid #fff;
+    color: #fff;
+}
+.stucase{
+    display: none;
+    width: 600px;
+    height: 400px;
+    border-radius: 0;
+    position: fixed;
+    background: #fff;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.stuclose{
+    width: 20px;
+    height: 20px;
+    background: url(img/cross.jpg) no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition:all 0.1s linear 0s;  
+}
+.stuclose:hover{
+    box-shadow:0px 1px 2px rgba(0,0,0,0.5);
+}
+.stuform{
+    padding: 50px 70px 0;
+}
+.stuform h3{
+    width: 60px;
+    font-size: 16px;
+    padding: 0 30px 30px 0;
+    display: inline-block;
+}
+.stuform input{
+    width: 403px;
+    height: 22px;
+}
+.stuup{
+    padding-bottom: 40px;
+}
+.stuup input{
+    display:inline-block;
+    width:236px;
+    height: 22px;
+}
+.stuup .stuupbtn{
+    width: 80px;
+    height: 30px;
+}
+.stuform .stuissue{
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+.student .number li{
+    background: #41810F;
+}
+.student .number .current{
+    background: #fff;
+}
+.student .number .current a{
+    color: #41810F;
+}
+/*copy*/
+.copy{
+    width: 100%;
+    height: 40px;
+    background: #CCC;
+    text-align: center;
+}
+.copy p{
+    text-align: center;
+    line-height: 40px;
+}
+.copy span{
+    padding-left: 20px;
+}
+/*file上传按钮*/
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    vertical-align: top;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+.massage li:hover ul{display:block;}
+.massage1{display:none;color:red;background-color:#EEE;border:1px solid #E0E0E0;padding:8px 0;border-radius:4px;}
+.massage1 a{display:block;}
+
